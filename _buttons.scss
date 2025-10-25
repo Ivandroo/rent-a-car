@@ -1,0 +1,47 @@
+//header log in buttons styles
+@mixin botao-estilo() {
+    padding: .5rem 1rem;
+    width: 130px;
+    border: none;
+    border-radius: 1px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    background-color: $verde-claro;
+    color: $branco;
+    &:hover {
+        background-color: darken($verde-claro, 10%);
+    }
+}
+
+header {
+    div.main-content{
+        div.login-account-content{
+            display: flex;
+            gap: 1rem;
+            button {
+                @include botao-estilo();
+            }
+        }
+    }
+}
+
+.book-now-button {
+    @include botao-estilo();
+}
+
+.learn-more-button {
+    @include botao-estilo();
+    color: $verder-escuro;
+    border: 1.5px solid $verder-escuro;
+    background-color: $branco;
+    &:hover {
+        color: $verde-floresta;
+        background-color: lighten($branco, 10%);
+    }
+}
+.rent-now-button {
+    @include botao-estilo();
+    height: 30px;
+}
