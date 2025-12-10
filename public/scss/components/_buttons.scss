@@ -1,0 +1,86 @@
+//header log in buttons styles
+@mixin botao-estilo() {
+    padding: .5rem 1rem;
+    width: 130px;
+    border: none;
+    border-radius: 1px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    background-color: $verde-claro;
+    color: $branco;
+    &:hover {
+        background-color: darken($verde-claro, 10%);
+    }
+}
+
+header {
+    div.main-content{
+        div.login-account-content{
+            display: flex;
+            gap: 1rem;
+            button {
+                @include botao-estilo();
+                a {
+                    text-decoration: none;
+                    color: $branco;
+                }
+            }
+        }
+    }
+}
+
+.book-now-button {
+    @include botao-estilo();
+    a {
+        text-decoration: none;
+        color: $branco;
+    }
+}
+
+.learn-more-button {
+    @include botao-estilo();
+    color: $verder-escuro;
+    border: 1.5px solid $verder-escuro;
+    background-color: $branco;
+    &:hover {
+        color: $verde-floresta;
+        background-color: lighten($branco, 10%);
+    }
+}
+
+.add-car {
+    width: 100px;
+    height: 100px;
+    font-size: 22pt;
+    color: $verder-escuro;
+    background-color: $branco;
+    border-radius: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px 5px rgba($color: #000000, $alpha: .2);
+}
+
+.rent-now-button {
+    @include botao-estilo();
+    height: 30px;
+    a {
+        text-decoration: none;
+        color: $branco;
+    }
+}
+
+.cancel-button {
+    @include botao-estilo();
+    height: 30px;
+    background-color: $vermelho;
+    &:hover {
+        background-color: darken($vermelho, 10%);
+    }
+    a {
+        text-decoration: none;
+        color: $branco;
+    }
+}

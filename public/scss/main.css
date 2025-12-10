@@ -1,0 +1,526 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  zoom: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  font-family: "montserrat", sans-serif;
+}
+
+header div.upper-content {
+  display: flex;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  color: #f1f7f6;
+  background-color: #032221;
+}
+header div.upper-content span {
+  color: #f1f7f6;
+  margin: 0 0.7rem;
+  align-items: center;
+}
+header div.upper-content span img {
+  padding: 0.05rem;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #f1f7f6;
+}
+header div.upper-content a {
+  margin-right: 0.5rem;
+  padding: 0.1rem;
+  text-decoration: none;
+  color: #f1f7f6;
+  font-weight: 600;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+header div.upper-content a img {
+  padding: 0.05rem;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #f1f7f6;
+}
+header div.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f1f7f6;
+}
+header div.main-content img {
+  width: 150px;
+}
+header div.main-content nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+header div.main-content nav ul li a {
+  text-decoration: none;
+  color: #032221;
+  font-weight: 600;
+  transition: 0.3s;
+}
+header div.main-content nav ul li a:hover {
+  color: #036246;
+}
+
+header div.main-content div.login-account-content {
+  display: flex;
+  gap: 1rem;
+}
+header div.main-content div.login-account-content button {
+  padding: 0.5rem 1rem;
+  width: 130px;
+  border: none;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #036246;
+  color: #f1f7f6;
+}
+header div.main-content div.login-account-content button:hover {
+  background-color: rgb(1.4851485149, 48.5148514851, 34.6534653465);
+}
+header div.main-content div.login-account-content button a {
+  text-decoration: none;
+  color: #f1f7f6;
+}
+
+.book-now-button {
+  padding: 0.5rem 1rem;
+  width: 130px;
+  border: none;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #036246;
+  color: #f1f7f6;
+}
+.book-now-button:hover {
+  background-color: rgb(1.4851485149, 48.5148514851, 34.6534653465);
+}
+.book-now-button a {
+  text-decoration: none;
+  color: #f1f7f6;
+}
+
+.learn-more-button {
+  padding: 0.5rem 1rem;
+  width: 130px;
+  border: none;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #036246;
+  color: #f1f7f6;
+  color: #032221;
+  border: 1.5px solid #032221;
+  background-color: #f1f7f6;
+}
+.learn-more-button:hover {
+  background-color: rgb(1.4851485149, 48.5148514851, 34.6534653465);
+}
+.learn-more-button:hover {
+  color: #095544;
+  background-color: white;
+}
+
+.add-car {
+  width: 100px;
+  height: 100px;
+  font-size: 22pt;
+  color: #032221;
+  background-color: #f1f7f6;
+  border-radius: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rent-now-button {
+  padding: 0.5rem 1rem;
+  width: 130px;
+  border: none;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #036246;
+  color: #f1f7f6;
+  height: 30px;
+}
+.rent-now-button:hover {
+  background-color: rgb(1.4851485149, 48.5148514851, 34.6534653465);
+}
+.rent-now-button a {
+  text-decoration: none;
+  color: #f1f7f6;
+}
+
+.cancel-button {
+  padding: 0.5rem 1rem;
+  width: 130px;
+  border: none;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #036246;
+  color: #f1f7f6;
+  height: 30px;
+  background-color: #ff4c4c;
+}
+.cancel-button:hover {
+  background-color: rgb(1.4851485149, 48.5148514851, 34.6534653465);
+}
+.cancel-button:hover {
+  background-color: #ff1919;
+}
+.cancel-button a {
+  text-decoration: none;
+  color: #f1f7f6;
+}
+
+section {
+  padding: 60px 0;
+  background-color: #f1f7f6;
+}
+section div.main-content div.upper-content {
+  display: flex;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+section div.main-content div.upper-content div.text-content {
+  width: 50%;
+}
+section div.main-content div.upper-content div.text-content h1 {
+  font-size: 2.8rem;
+  color: #032221;
+  margin-bottom: 1rem;
+}
+section div.main-content div.upper-content div.text-content h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #095544;
+  margin-bottom: 0.5rem;
+}
+section div.main-content div.upper-content div.text-content p {
+  font-size: 1rem;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+  color: #032221;
+}
+section div.main-content div.upper-content div.image-content {
+  width: 50%;
+  padding: 1rem 2rem;
+}
+section div.main-content div.upper-content div.image-content img {
+  width: 100%;
+}
+section div.main-content div.add-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: #f1f7f6;
+}
+section div.cars-content {
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+}
+section div.cars-content div.text-cars-area {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+section div.cars-content div.text-cars-area h1 {
+  font-size: 2rem;
+  color: #032221;
+  margin-bottom: 0.1rem;
+}
+section div.cars-content div.fleet-cars-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section div.cars-content div.fleet-cars-content div.car-card {
+  padding: 0.5rem 0.5rem;
+  margin: 2rem 1rem;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+}
+section div.cars-content div.fleet-cars-content div.car-card h2 {
+  font-size: 14pt;
+  font-weight: 600;
+  color: #032221;
+}
+section div.cars-content div.fleet-cars-content div.car-card img {
+  width: 350px;
+  height: 200px;
+}
+section div.cars-content div.fleet-cars-content div.car-card div.car-card-details {
+  margin: 0.2rem 0.5rem;
+  border-bottom: 1px solid grey;
+}
+section div.cars-content div.fleet-cars-content div.car-card div.car-card-details span {
+  font-size: 9pt;
+  margin-right: 0.8rem;
+}
+section div.cars-content div.fleet-cars-content div.car-card div.car-card-price {
+  display: flex;
+  margin: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+section div.cars-content div.fleet-cars-content div.car-card div.car-card-price div.car-rent-price span {
+  font-size: 9pt;
+  color: grey;
+}
+section div.cars-content div.fleet-cars-content div.car-card div.car-card-price div.car-rent-price h2 {
+  font-size: 18pt;
+}
+section div.rentacar-info-area {
+  background: url(../assets/images/closeup-shot-black-car-parking-lot-with-blurred-background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+section div.rentacar-info-area div.rentacar-upper-info {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 1rem 0 0 0;
+}
+section div.rentacar-info-area div.rentacar-upper-info h1 {
+  font-size: 2.2rem;
+  color: #f1f7f6;
+  margin-bottom: 1rem;
+}
+section div.rentacar-info-area div.rentacar-upper-info h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #036246;
+  margin-bottom: 0.5rem;
+}
+section div.rentacar-info-area div.rentacar-upper-info p {
+  font-size: 12pt;
+  color: #f1f7f6;
+}
+section div.rentacar-info-area div.rentacar-upper-info div.rentacar-info {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+section div.rentacar-info-area div.rentacar-lower-info {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 1rem 0;
+}
+section div.rentacar-info-area div.rentacar-lower-info div.rentacar-box-info {
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+section div.rentacar-info-area div.rentacar-lower-info div.rentacar-box-info h1 {
+  font-size: 1.5rem;
+  color: #036246;
+  margin-bottom: 0.5rem;
+}
+section div.rentacar-info-area div.rentacar-lower-info div.rentacar-box-info span {
+  font-size: 12pt;
+  color: #f1f7f6;
+}
+section div.rentacar-services-content {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #f1f7f6;
+  margin: 2.5rem 0;
+}
+section div.rentacar-services-content div.services-box-content div.services-box {
+  display: flex;
+  margin: 1rem 0;
+}
+section div.rentacar-services-content div.services-box-content div.services-box h2 {
+  font-size: 1rem;
+  color: #032221;
+}
+section div.rentacar-services-content div.services-box-content div.services-box img {
+  width: 500px;
+  margin: 1rem;
+}
+section div.rentacar-services-content div.services-box-content div.services-box div.services-box-logo {
+  font-size: 2rem;
+  color: #036246;
+  margin-right: 1rem;
+}
+
+.contact-content {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-content div.contact-area {
+  width: 50%;
+}
+.contact-content div.contact-area h2 {
+  font-size: 2rem;
+  color: #032221;
+  margin-bottom: 1rem;
+}
+.contact-content div.contact-area p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #032221;
+}
+.contact-content div.contact-area form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-content div.contact-area form input, .contact-content div.contact-area form textarea, .contact-content div.contact-area form fieldset {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #036246;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contact-content div.contact-area form .send-message-button {
+  width: 150px;
+  padding: 0.5rem;
+  background-color: #036246;
+  color: #f1f7f6;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-content div.contact-area form .send-message-button:hover {
+  background-color: #032221;
+}
+.contact-content div.contact-image {
+  width: 45%;
+}
+.contact-content div.contact-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.footer-content {
+  display: flex;
+  background-color: #032221;
+  color: #f1f7f6;
+  padding: 3rem 2rem;
+  height: 300px;
+  justify-content: space-between;
+}
+
+.footer-box-content {
+  margin-right: 1rem;
+}
+.footer-box-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer-box-content span {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  color: rgb(197, 197, 197);
+}
+.footer-box-content .copy {
+  margin-top: 1rem;
+  color: rgb(150, 150, 150);
+  font-size: 9pt;
+}
+.footer-box-content i {
+  color: #095544;
+}
+.footer-box-content i:hover {
+  color: #036246;
+}
+
+.footer-box-content > a {
+  color: #036246;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+.footer-box-content > a:hover {
+  color: #f1f7f6;
+}
+
+.footer-links {
+  border-top: 0.5px solid rgb(66.1818181818, 115.8181818182, 107.5454545455);
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #036246;
+  transition: 0.2s ease-in-out;
+}
+.footer-links a:hover {
+  color: #f1f7f6;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  margin-top: 0.3rem;
+}
+.social-media-icons a {
+  color: #f1f7f6;
+  transition: color 0.3s ease;
+}
+.social-media-icons a:hover {
+  color: #f1f7f6;
+}
+
+div.add-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: red;
+}
+
+div.car-card-rent {
+  margin-top: 1rem;
+}/*# sourceMappingURL=main.css.map */

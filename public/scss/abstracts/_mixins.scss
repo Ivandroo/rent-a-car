@@ -1,0 +1,23 @@
+
+@mixin botao-estilo() {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    background-color: $verde-claro;
+    color: $branco;
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
+
+@mixin estilo-div() {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: .5);
+}

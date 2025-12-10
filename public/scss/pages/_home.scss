@@ -1,0 +1,245 @@
+
+@mixin estilo-div() {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: .5);
+}
+
+section {
+    padding: 60px 0;
+    background-color: $branco;
+    div.main-content {
+        div.upper-content {
+            display: flex;
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            div.text-content {
+                width: 50%;
+                h1 {
+                    font-size: 2.8rem;
+                    color: $verder-escuro;
+                    margin-bottom: 1rem;
+                }
+                h2 {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: $verde-floresta;
+                    margin-bottom: .5rem;
+                }
+                p {
+                    font-size: 1rem;
+                    margin: 0 auto;
+                    margin-bottom: .8rem;
+                    color: $verder-escuro;
+                }
+            }
+            div.image-content {
+                width: 50%;
+                padding: 1rem 2rem;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        div.add-content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            background-color: $branco;
+        }
+    }
+
+    div.cars-content {
+        padding: .5rem 1rem;
+        margin-bottom: 2rem;
+        div.text-cars-area {
+            margin-bottom: 1rem;
+            text-align: center;
+            h1 {
+                font-size: 2rem;
+                color: $verder-escuro;
+                margin-bottom: .1rem;
+            }
+        }
+        div.fleet-cars-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div.car-card {
+                padding: .5rem .5rem;
+                margin: 2rem 1rem;
+                border-radius: 2px;
+                box-shadow: 0 0 10px 5px rgba($color: #000000, $alpha: .05);
+                h2 {
+                    font-size: 14pt;
+                    font-weight: 600;
+                    color: $verder-escuro;
+                }
+
+                img {
+                    width: 350px;
+                    height: 200px;
+                }
+                
+                div.car-card-details {
+                    margin: .2rem .5rem;
+                    border-bottom: 1px solid grey;
+                    span {
+                        font-size: 9pt;
+                        margin-right: .8rem;
+                    }
+                }
+                div.car-card-price {
+                    display: flex;
+                    margin: .5rem;
+                    align-items: center;
+                    justify-content: space-between;
+                    div.car-rent-price {
+                        span {
+                            font-size: 9pt;
+                            color: grey;
+                        }
+                        h2 {
+                            font-size: 18pt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.rentacar-info-area {
+        background: url(../assets/images/closeup-shot-black-car-parking-lot-with-blurred-background.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+        margin: 2rem 0;
+        div.rentacar-upper-info {
+            @include estilo-div();
+            margin: 1rem 0 0 0;
+            h1 {
+                font-size: 2.2rem;
+                color: $branco;
+                margin-bottom: 1rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: $verde-claro;
+                margin-bottom: .5rem;
+            }
+            p {
+                font-size: 12pt;
+                color: $branco;
+            }
+            div.rentacar-info {
+                width: 100%;
+                padding: 1rem 2rem;
+            }
+        }
+        div.rentacar-lower-info {
+            @include estilo-div();
+            margin: 0 0 1rem 0;
+            div.rentacar-box-info {
+                padding: 1rem 2rem;
+                text-align: center;
+                background-color: rgba($color: #000000, $alpha: .5);
+                h1 {
+                    font-size: 1.5rem;
+                    color: $verde-claro;
+                    margin-bottom: .5rem;
+                }
+                span {
+                    font-size: 12pt;
+                    color: $branco;
+                }
+            }
+        }
+    }
+
+    div.rentacar-services-content {
+        @include estilo-div();
+        background-color: $branco;
+        margin: 2.5rem 0;
+        div.services-box-content {
+            div.services-box {
+                display: flex;
+                margin: 1rem 0;
+                h2 {
+                    font-size: 1rem;
+                    color: $verder-escuro;
+                }
+                img {
+                    width: 500px;
+                    margin: 1rem;
+                }
+                div.services-box-logo {
+                    font-size: 2rem;
+                    color: $verde-claro;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.contact-content {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div.contact-area {
+        width: 50%;
+        h2 {
+            font-size: 2rem;
+            color: $verder-escuro;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: $verder-escuro;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            input, textarea, fieldset {
+                margin-bottom: 1rem;
+                padding: .5rem;
+                border: 1px solid $verde-claro;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+            .send-message-button {
+                width: 150px;
+                padding: .5rem;
+                background-color: $verde-claro;
+                color: $branco;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color .3s;
+
+                &:hover {
+                    background-color: $verder-escuro;
+                }
+            }
+        }
+    }
+    div.contact-image {
+        width: 45%;
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
